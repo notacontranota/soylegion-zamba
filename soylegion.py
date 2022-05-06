@@ -66,6 +66,7 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.dados = []
         self.audio = pygame.mixer
+        self.audio.init(48000, -16, 2, 1024)
 
         self.runLilypond = QtCore.QProcess(self)
         self.runLilypond.setProcessChannelMode(QtCore.QProcess.MergedChannels)
@@ -73,9 +74,6 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
         self.runLilypond.finished.connect(self.muestraPNG)
 
         self.botonComponer.setEnabled(True)
-
-        #inicializa pygame midi
-        self.audio.init(48000, -16, 2, 1024)
 
         #lanza dados y compone al iniciar el programa
         self.lanzadados()
@@ -205,7 +203,11 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
     def compone(self):
-        #desactiva botones y saca PNG
+        #libera midi, desactiva botones y saca PNG
+        try:
+            self.audio.music.unload()
+        except:
+            pass
         self.salidaTexto.clear()
         self.label.setPixmap(QtGui.QPixmap(None))
         self.botonPlay.setEnabled(False)
@@ -227,20 +229,15 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
         self.botonPDF.setEnabled(True)
         self.botonComponer.setEnabled(True)
         #Inicializa PyGame y carga el archivo de audio
-        #self.audio.init(48000, -16, 2, 1024)
-        #if platform.system() == 'Linux' or platform.system() == 'Darwin':
-            #self.audio.music.load("soylegion.midi")
-        #elif platform.system() == 'Windows':
-            #self.audio.music.load("soylegion.mid")
-        self.stop()
-        
-    def tocar(self):
-        #Inicializa PyGame y carga el archivo de audio
+        # self.audio.init(48000, -16, 2, 1024)
+        self.audio.unload()
         if platform.system() == 'Linux' or platform.system() == 'Darwin':
             self.audio.music.load("soylegion.midi")
         elif platform.system() == 'Windows':
             self.audio.music.load("soylegion.mid")
-
+        self.stop()
+        
+    def tocar(self):
         self.botonStop.setEnabled(True)
         self.botonPlay.setEnabled(False)
         self.audio.music.play()
