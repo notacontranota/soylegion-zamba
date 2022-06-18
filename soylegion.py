@@ -223,21 +223,25 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
         self.botonPlay.setEnabled(True)
         self.botonPDF.setEnabled(True)
         self.botonComponer.setEnabled(True)
-        if platform.system() == 'Linux' or platform.system() == 'Darwin':
-            # self.audio.music.load('soylegion.midi')
-            print ("cargar MIDI")
-        elif platform.system() == 'Windows':
-            self.audio.music.load("soylegion.mid")
+        #if platform.system() == 'Linux' or platform.system() == 'Darwin':
+            ## self.audio.music.load('soylegion.midi')
+            #print ("cargar MIDI")
+        #elif platform.system() == 'Windows':
+            #self.audio.music.load("soylegion.mid")
         self.stop()
         
     def tocar(self):
         self.botonStop.setEnabled(True)
         self.botonPlay.setEnabled(False)
-        # self.audio.music.play()
+        if platform.system() == 'Linux' or platform.system() == 'Darwin':
+            self.audio.music.load( "soylegion.midi" )
+            # print ("cargar MIDI")
+        elif platform.system() == 'Windows':
+            self.audio.music.load("soylegion.mid")
+        self.audio.music.play()
 
         # hilotocando = HiloTocando(self.audio)
         # hilotocando.start()
-        print(self.audio.music.get_busy())
 
     def stop(self):
         self.botonStop.setEnabled(False)

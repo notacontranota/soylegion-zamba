@@ -4,7 +4,7 @@
   dedication = \markup { \italic "de «Soy Legión»" }
   title = "Zamba para un exorcismo"
   subtitle = "(Aire de zamba)"
-  subsubtitle = "Dados: [9, 5, 6, 8, 8, 10, 8, 6, 8, 10, 11, 7, 5, 8, 10, 9, 7, 3, 3, 8, 9, 5, 5, 9]"
+  subsubtitle = "Dados: [12, 12, 10, 3, 10, 6, 4, 7, 10, 6, 4, 7, 9, 10, 10, 8, 6, 5, 6, 5, 7, 7, 8, 10]"
   composer = "Pablo Herrera & Legión"
   copyright = \markup {\with-url #"http://osijsalta.com/" {
     \center-column {
@@ -31,56 +31,56 @@
    )
 
 manoderecha = {
-  r8. c'16 d' ees' g'8 ees' c'
-  g'8.[ g''16] d''8.[ c''16] b'8.[ g'16]
-  aes'8. f'16 aes' c'' f''4 r8
-  ees''16 c'' b' c'' d'' c'' g' c'' f' c'' ees'8
-  ees''4. ees''4 c''16 d''
-  ees''8. bes''16 ees''8 bes' ees'' bes'
-  ees'16 c'' d'' c'' bes' c'' aes' bes'aes' g' f' aes'
-  g'8. ees'16 bes'8 g'' ees'' bes''
-  ees''4. ees''4 c''16 d''
-  ees''8. bes''16 ees''8 bes' ees'' bes'
-  aes'8.[ aes''16] bes'8[ g''] d''[ f'']
+  g16 c' d' ees' f' g' g''8. g'16 g''8
+  g16 d' ees' f' fis' g' g''8. g'16 g''8
+  aes'8 f'16 aes' c'' f'' f'4 f'8
+  ees'8. ees''16 ees'8 ees'' ees'4
+  ees''8. c''16 c'''8 aes'' ees'' c'''
+  f''8 ees''4 r8 d'' ees''
+  \appoggiatura b'8 c''4 \appoggiatura a'8 bes'4 \appoggiatura g'8 aes'4
+  <ees' g'>2.
+  ees''8. c''16 c'''8 aes'' ees'' c'''
+  f''8 ees''4 r8 d'' ees''
+  \appoggiatura g''8 aes''4 \appoggiatura fis''8 g''4 \appoggiatura e''8 f''4
   <c'' ees''>2.
-  << {g''8 f''4~ f''4.} \\ {r4. g'4 aes'8} >>
-  << {r8 ees'' d'' ees''4 c''8} \\ {c''8 r4 r4.} >>
+  << {\repeat unfold 2 {\appoggiatura e''8 \stemUp f'' c''4 \slurUp} \stemNeutral} \\ {r4 aes'16 g' aes'4 g'8} >>
+  << {r8. ees'16 aes' c'' d''8 ees''4} \\ {\appoggiatura b'8 c''4. r8. c''16 b' c''} >>
   << {d''4 f''16 ees'' d''4 ees''8} \\ {r8 f' ees' f'4 r8} >>
-  << {f''8.[ aes''16] c''8.[ f''16] aes'8.[ c''16]} \\ {aes'8 r c' r f' r} >>
-  << {f'8. des'16 des''8 aes' f' des''} \\ {r4 \change Staff = "MI" \stemUp aes16 g \change Staff = "MD" \stemDown \tuplet 4/3 {aes8 g \change Staff = "MI" \stemUp aes bes} \change Staff = "MD" \stemNeutral } >>
-  << {bes'8 aes'4~ aes'4.} \\ {ees'8. c'8 d'16 ees'8. f'8 ees'16} >>
-  << {bes'4 bes'16 c'' bes'4.} \\ {r8 f' \appoggiatura cis'8 d'4 f'} >>
-  << {\repeat unfold 3 {bes'16[ c' e' g']} } \\ {\repeat unfold 3 {\stemDown \appoggiatura d'8 \stemDown c'4 \stemNeutral} } >>
-  << {bes'8 aes'4~ aes'4.} \\ {f'8. c'8 e'16 f'8. g'8 f'16} >>
-  << {g''8 c'''4 d''8 c''4} \\ {ees'16 g' c'' ees''8. ees'4 ees'8} >>
-  << {g''8 b''4 d''8 b'4} \\ {r4 f''16 f' \tuplet 4/3 {f'8 g' ees' f' } } >>
-  << {d''4. c''} \\ {f'4. ees'} >>
+  << {d''8 c''4~ c''4.} \\ {r4 aes'16 g' aes'8 aes'4} >>
+  << {f'16 c' des' ees' f' g' aes' bes' c'' des'' ees'' f''} \\ {aes8. aes16 des'!8 f'8. des'16 aes8} >>
+  << {ees''8 aes'' aes' ees'' aes'' aes'} \\ {c'8. ees' aes' ees'} >>
+  << {bes'16 c'' bes'4 bes' c''16 bes'} \\ {f'8. d' bes8 c' d'} >>
+  << {c''8 bes'4~ bes'4.} \\ {\appoggiatura d'8 \stemDown c' g'4 r16 g' f' e' d' c' \stemNeutral } >>
+  << {aes'8. f'8 g'16 aes'8. bes'8 aes'16} \\ {\repeat unfold 2 {f'16[ aes bes c']} f'8[ c']} >>
+  << {d''8. c'16 ees' g' c''4 r8} \\ {\repeat unfold 2 {\appoggiatura d'8 ees' c'4} } >>
+  << {d''4 f''8[ ees''] d''4} \\ {<f' b'>4 <f' b'>~ <f' b'>8 f'} >>
+  <c' ees'g' c''>2.\arpeggio
 }
 manoizquierda = {
-  c,4 c8 ees8. ees16 g c'
-  r8 <b, g> <b, g>16 r r8. <b, g>8 r16
-  f,4 f f,
-  c'8 g16 aes g f ees f g c' c8
-  \repeat unfold 2 {aes8 <c' ees'>4}
-  g16 aes bes d' ees' f' ees' d' c' bes aes g
-  \appoggiatura g8 aes4 \appoggiatura a8 bes4 \appoggiatura a,8 bes,4
-  bes4 ees g,8. g16
-  \repeat unfold 2 {aes8 <c' ees'>4}
-  g16 aes bes d' ees' f' ees' d' c' bes aes g
-  r8[ f ees16 r] r[ g8. r16 <b, d>]
+  c8. c'16 c8 c' c4
+  r8 aes, g,4 b,
+  \repeat unfold 2 {\appoggiatura e8 f aes,4}
+  c'16 bes aes g ees d c4 c'8
+  r8 <aes, c ees>4 r8 <aes c' ees'>4
+  <ees g bes ees'>4.\arpeggio <g bes ees' g'>\arpeggio
+  aes,8 aes g16 aes bes8 bes, aes,16 bes,
+  r8. ees'16 bes g ees4 ees'8
+  r8 <aes, c ees>4 r8 <aes c' ees'>4
+  <ees g bes ees'>4.\arpeggio <g bes ees' g'>\arpeggio
+  f,8 f ees16 f g8 g, a,16 b,
   r8. c'16 g ees c4 r8
-  r8. f,16 aes, c e8 f4
-  r8. aes16 ees c aes,4.
+  f,8[ e16 f] f,8[ f16 e] f,8[ f]
+  r8 aes g aes4 aes,8
   \ottava #-1 bes,4 bes,, bes, \ottava #0
-  \repeat unfold 2 {\appoggiatura g,8 f, f4}
-  \stemDown \repeat unfold 2 {<des, aes,>4 r8} \stemNeutral
-  c4 aes, c
-  f,16 bes, d4 f16 f, d4
-  e,8. e16 e,8 e e, e
-  \repeat unfold 3 {\appoggiatura e8 f4}
-  r8. g,16 c ees g8 g, g
-  \ottava #-1 g,,8. g,16 g,,8 g, g,, g, \ottava #0
-  <c, ees, g, c>2.\arpeggio
+  <f, aes, c f>2.\arpeggio
+  \repeat unfold 2 {<des, aes, des>4.}
+  c8.[ aes,16] ees8.[ c16] aes8.[ ees16]
+  d8. f16 bes8 f8. d
+  e8. c8 d16 e8. f8 e16
+  <f, aes, c f>2\arpeggio r4
+  g,4 g8 ees8. ees16 c g,
+  g,16 a, b, d e f g f d b, g,8
+  <c, c>2.\arpeggio
 }
 
 #(set-global-staff-size 18)
