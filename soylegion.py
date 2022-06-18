@@ -203,11 +203,6 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
     def compone(self):
-        #libera midi, desactiva botones y saca PNG
-        try:
-            self.audio.music.unload()
-        except:
-            pass
         self.salidaTexto.clear()
         self.label.setPixmap(QtGui.QPixmap(None))
         self.botonPlay.setEnabled(False)
@@ -228,11 +223,9 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
         self.botonPlay.setEnabled(True)
         self.botonPDF.setEnabled(True)
         self.botonComponer.setEnabled(True)
-        #Inicializa PyGame y carga el archivo de audio
-        # self.audio.init(48000, -16, 2, 1024)
-        self.audio.unload()
         if platform.system() == 'Linux' or platform.system() == 'Darwin':
-            self.audio.music.load("soylegion.midi")
+            # self.audio.music.load('soylegion.midi')
+            print ("cargar MIDI")
         elif platform.system() == 'Windows':
             self.audio.music.load("soylegion.mid")
         self.stop()
@@ -240,7 +233,8 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
     def tocar(self):
         self.botonStop.setEnabled(True)
         self.botonPlay.setEnabled(False)
-        self.audio.music.play()
+        # self.audio.music.play()
+
         # hilotocando = HiloTocando(self.audio)
         # hilotocando.start()
         print(self.audio.music.get_busy())
