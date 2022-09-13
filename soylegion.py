@@ -1,6 +1,8 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# Soy Legión v.0.3.0 | 13/09/22
+
 from soyventana import *
 from soyabout import *
 import soypartitura, soycompases
