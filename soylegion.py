@@ -230,7 +230,6 @@ class SoyVentana(QtWidgets.QMainWindow, Ui_MainWindow):
         self.botonPlay.setEnabled(False)
         if platform.system() == 'Linux' or platform.system() == 'Darwin':
             self.audio.music.load("soylegion.midi")
-            # print ("cargar MIDI")
         elif platform.system() == 'Windows':
             self.audio.music.load("soylegion.mid")
         self.audio.music.play()

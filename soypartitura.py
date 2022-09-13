@@ -14,11 +14,11 @@ def partitura(dados):
   subtitle = \"(Aire de zamba)\"\n""")
   lily.append ("  subsubtitle = \"Dados: " + repr(dados) + "\"\n")
   lily.append ("""  composer = \"Pablo Herrera & Legión\"
-  copyright = \\markup {\\with-url #\"http://osijsalta.com/\" {
+  copyright = \\markup {\\with-url #\"http://lecturayescrituramusical.blogspot.com/\" {
     \\center-column {
-      \\epsfile #0 #15 #\"recursos/osijs.eps\"
-      \\bold {\"Orquesta Sinfónica Infantil y Juvenil de Salta\"}
-      \"http://osijsalta.com/\"
+      \\epsfile #0 #15 #\"recursos/soyncn.eps\"
+      \\bold {\"Nota contra Nota\"}
+      \"http://lecturayescrituramusical.blogspot.com/\"
       \\null
     }
                        }

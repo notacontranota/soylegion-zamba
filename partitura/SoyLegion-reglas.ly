@@ -752,7 +752,7 @@ staffPiano = \new PianoStaff <<
         que acercan desde el punto de vista formal el
         resultado final más a una zamba que a un aire de
         zamba. El procedimiento consiste en usar el
-        mismo resultado de dados para el compás 5 y 9,
+        mismo resultado de dados para los compases 5 y 9,
         al igual que para los compases 6 y 10.
         Opcionalmente se puede también practicar el
         procedimiento para las parejas de compases 7 y 11
