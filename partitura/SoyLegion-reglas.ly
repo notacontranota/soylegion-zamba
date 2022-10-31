@@ -10,11 +10,11 @@
   composer = "Pablo Herrera"
   instrument = "Piano"
   %piece = "Zamba para un exorcismo"
-  copyright = \markup {\with-url #"http://osijsalta.com/" {
+  copyright = \markup {\with-url #"https://lecturayescrituramusical.blogspot.com" {
       \center-column {
-        \epsfile #0 #12 #"../recursos/osijs.eps"
-        \bold {"Orquesta Sinfónica Infantil y Juvenil de Salta"}
-        "http://osijsalta.com"
+        \epsfile #0 #12 #"../recursos/soyncn.eps"
+        \bold {"Noda contra Nota"}
+        "https://lecturayescrituramusical.blogspot.com"
         \null
       }
     }
